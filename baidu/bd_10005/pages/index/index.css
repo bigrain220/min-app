@@ -51,7 +51,7 @@
 }
 /* index_intro */
 .index_intro{padding: 0 24rpx;overflow: hidden;box-sizing: border-box;}
-.index_intro .intro_content{width: 100%;border-bottom:1rpx solid #ccc;}
+.index_intro .intro_content{width: 100%;}
 .index_intro .intro_content .intro_text{ font-size:26rpx;color:rgb( 102, 102, 102 );line-height: 34rpx;
 margin-top:20rpx;letter-spacing: 1rpx;
 text-overflow: -o-ellipsis-lastline;
