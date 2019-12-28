@@ -1,0 +1,12 @@
+.prolist-box{ width: 100%;}
+.prolist-box .prolist_l{ width: 24%; height: 100vh; overflow-y: auto;float: left; background: #f5f5f5;font-size: 28rpx;}
+.prolist-box .prolist_r{ width: 76%; height: 100vh; overflow-y: auto; float: right;}
+.prolist-box .prolist_l .item{ font-size: 28rpx; color: #666; line-height:80rpx; text-align: center; height: 80rpx; overflow: hidden;}
+.prolist-box .prolist_l .active{ overflow: hidden; background-color: #fff;color: rgb( 231, 140, 34 );}
+.prolist-box .prolist_r .pro_item{ width: 280rpx; height: 300rpx; overflow: hidden; float: left;text-align: center;padding: 0 10rpx;box-sizing: border-box;margin-bottom: 40rpx;}
+.prolist-box .prolist_r .pro_item text{ font-size: 28rpx; color: #333; height: 40rpx; line-height: 40rpx; text-align: center; }
+.prolist-box .prolist_r .pro_item .pro-item-img{ width: 100%; height: 260rpx; overflow: hidden; }
+.svv{ height: 1110rpx; }
+.page-loading{color: #999;}
+
+

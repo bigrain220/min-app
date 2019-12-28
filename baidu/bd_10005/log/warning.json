@@ -1,0 +1,11 @@
+[
+    {
+        "type": "show tips",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/app.js",
+        "row": 13,
+        "column": 4,
+        "before": "wx.login",
+        "after": "swan.login",
+        "message": "wx.login --- 登录接口code换取openid和session_key 在百度小程序中存在diff \n      相关文档：https://smartapp.baidu.com/docs/develop/api/open_log/#Session-Key/"
+    }
+]

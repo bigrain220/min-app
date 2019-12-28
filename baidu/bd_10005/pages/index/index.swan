@@ -1,18 +1,16 @@
-<import src="../../wxParse/wxParse.wxml" />
-<wxs src="../../utils/imgFilter.wxs" module="tools" />
-<block wx:if="{{showLoading}}">
+<import src="../../wxParse/wxParse.swan" />
+<filter src="../../utils/imgFilter.js" module="swan"></filter>
+<block s-if="showLoading">
   <view class="page-loading">
     <image class="img-loading" src="../images/1.gif" />
     <text>正在加载中...</text>
   </view>
 </block>
-<block wx:else>
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
-    indicator-active-color="#eae88f" style="width: 100%; height: 280rpx; margin:0 auto; overflow: hidden;">
-    <block wx:for="{{imgUrls}}" wx:key="{{imgUrls}}">
+<block s-else>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#eae88f" style="width: 100%; height: 280rpx; margin:0 auto; overflow: hidden;">
+    <block s-for="item, index in imgUrls" s-key="{{imgUrls}}">
       <swiper-item>
-        <image src="{{tools.bar(item.image,750)}}" class="slide-image" mode="widthFix"
-          style="width:100%; height:100%;" />
+        <image src="{{swan.bar(item.image,750)}}" class="slide-image" mode="widthFix" style="width:100%; height:100%;" />
       </swiper-item>
     </block>
   </swiper>
@@ -23,14 +21,13 @@
       <view class="title-en">Hot Products</view>
     </view>
     <view class="products-box clearfix">
-      <block wx:if="{{proList.length>0}}">
-        <view class="products-item" wx:for="{{proList}}" wx:key="index" data-id="{{item.id}}" data-title="{{item.name}}"
-          data-img="{{item.image}}" bindtap="goProDetail">
-          <image src="{{tools.bar(item.image,375)}}" alt="" class="img" />
+      <block s-if="proList.length>0">
+        <view class="products-item" s-for="item, index in proList" s-key="index" data-id="{{item.id}}" data-title="{{item.name}}" data-img="{{item.image}}" bindtap="goProDetail">
+            <image src="{{swan.bar(item.image,375)}}" alt class="img" />
           <view class="products-title">{{item.name}}</view>
         </view>
       </block>
-      <block wx:else>
+      <block s-else>
         <view class="no-data">暂无数据</view>
       </block>
       <!-- <view class="products-item">
@@ -47,11 +44,10 @@
       <view class="title-en">Video Show</view>
     </view>
     <view class="video-box">
-      <block wx:if="{{videoData.url}}">
-        <video class="video" src="{{videoData.url}}" poster="{{videoData.image}}" controls show-center-play-btn
-          enable-play-gesture></video>
+      <block s-if="videoData.url">
+        <video class="video" src="{{videoData.url}}" poster="{{videoData.image}}" controls show-center-play-btn enable-play-gesture></video>
       </block>
-      <block wx:else>
+      <block s-else>
         <view class="no-data">暂无数据</view>
       </block>
     </view>
@@ -63,17 +59,16 @@
       <view class="title-en">News Center</view>
     </view>
     <view class="news-box">
-      <block wx:if="{{newsList.length>0}}">
-        <view class="news-item clearfix" wx:for="{{newsList}}" wx:key="index" data-id="{{item.id}}"
-          data-title="{{item.name}}" bindtap="goDetail">
-          <image src="{{tools.bar(item.image,140)}}" alt="" class="img l" />
+      <block s-if="newsList.length>0">
+        <view class="news-item clearfix" s-for="item, index in newsList" s-key="index" data-id="{{item.id}}" data-title="{{item.name}}" bindtap="goDetail">
+          <image src="{{swan.bar(item.image,140)}}" alt class="img l" />
           <view class="right-box r">
             <view class="date">{{newsYear[index]}}-{{newsDay[index]}}</view>
             <view class="title">{{item.name}}</view>
           </view>
         </view>
       </block>
-      <block wx:else>
+      <block s-else>
         <view class="no-data">暂无数据</view>
       </block>
       <!-- <view class="news-item clearfix">
@@ -92,10 +87,9 @@
       <view class="title-en">About us</view>
     </view>
     <view class="intro_content">
-      <image src="{{tools.bar(introData.image,750)}}" class="intro_img"
-        style="width:100%; height:340rpx;display: block;"></image>
+      <image src="{{swan.bar(introData.image,750)}}" class="intro_img" style="width:100%; height:340rpx;display: block;"></image>
       <view class="intro_text">
-        <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+        <template is="wxParse" data="{{{wxParseData:article.nodes}}}" />
       </view>
       <view class="intro_btn"><text bindtap="goIntroDetail">了解详情</text></view>
     </view>
