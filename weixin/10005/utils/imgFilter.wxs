@@ -1,0 +1,7 @@
+
+var bar = function (d,w) {
+  return  d+'?x-oss-process=image/resize,w_'+w;
+}
+module.exports = {
+  bar: bar,
+};
