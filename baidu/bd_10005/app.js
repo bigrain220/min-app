@@ -4,7 +4,6 @@ App({
   onLaunch: function () {
     // 展示本地存储能力
     //console.log(utilMd55)
-
     var logs = swan.getStorageSync('logs') || [];
     logs.unshift(Date.now());
     swan.setStorageSync('logs', logs);
