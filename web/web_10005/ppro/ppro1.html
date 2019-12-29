@@ -1,35 +1,80 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="format-detection" content="telephone=no">
-<meta name="viewport" content="width=device-width,minimum-scale=1,user-scalable=no,maximum-scale=1,initial-scale=1" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<title>南方网通网络技术开发有限公司</title>
-<link href="../css/firefox.css" rel="stylesheet" type="text/css" />
-<link href="../css/style.css" rel="stylesheet" type="text/css" />
-<script src="../js/jquery.js" type="text/javascript"></script>
-<script src="../js/banner.js" type="text/javascript"></script>
-<script src="../js/jquery.banner.revolution.min.js" type="text/javascript"></script>
-<!-- <script src="../js/common.js" type="text/javascript"></script> -->
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,user-scalable=no,maximum-scale=1,initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>南方网通网络技术开发有限公司</title>
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <link href="../css/firefox.css" rel="stylesheet" type="text/css" />
+  <script src="../js/jquery.js" type="text/javascript"></script>
+  <!-- <script src="../js/banner.js" type="text/javascript"></script>
+  <script src="../js/jquery.banner.revolution.min.js" type="text/javascript"></script> -->
+  <!-- <script src="../js/common.js" type="text/javascript"></script> -->
 </head>
+
 <body>
-    <div id="top">
-        <img src="../images/mob_top.png" alt="pic" style="width:100%;height:100%;">
-        <div class="top_back turn"></div>
-     </div>
-<div class="product-img"> <img  src="../images/pro_01.png"> </div>
-<div class="product-t">
-  <p>互动课堂</p>
-</div>
-<div class="product-box1"></div>
-<div class="product-info" style="width:95%;">
-  <div class="product-infoo">
-    <p>“互动式”教学是一种教学模式，就是把教育活动看作是师生进行一种生命与生命的交往、沟通，把教学过程看作是一个动态发展着的教与学统一的交互影响和交互活动过程。
-      在这个过程中，通过优化“教学互动”的方式，即通过调节师生关系及其相互作用，形成和谐的师生互动、生生互动、学习个体与教学中介的互动，强化人与环境的交互影响，以产生教学共振，达到提高教学效果的一种教学结构模式。
-  </p>
+  <div id="top">
+    <img src="../images/mob_top.png" alt="pic" style="width:100%;height:100%;">
+    <div class="top_back turn"></div>
   </div>
-</div>
+
+  <div class="product-img">
+    <img style="width:100%; height: 100%;" src=""></img>
+  </div>
+  <div class="product-msg">
+    <div class="title">吉利先锋</div>
+    <div class="model item">型号：GW250</div>
+    <div class="spec item">类型：炫酷摩托</div>
+    <div class="retail_price item">工厂指导价：20514</div>
+    <div class="price item">零售价：21500</div>
+  </div>
+
+  <div class="product-space"></div>
+
+  <div class="product-info">
+    <div class="title">产品详情</div>
+    <div class="product-infoo">
+      &nbsp&nbsp你可以为保护环境作出贡献。 你骑的方式决定了你的燃料消耗,也决定了你的汽车污染大气的程度。 同样,你对待你的摩托车的方式分影响它的噪音的大小和车辆的磨损程度。
+      在用户手册中,你可以打到一系列的该如何环保地骑乘摩托车的信息,也是最经济的方式骑你的车 在这个手册，请注意所有有一朵花图标的关键信息。 我们是靠你保护环境了!
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      var query = location.search.split('=')[1] + "";
+      var title = "";
+      var path = "";
+      path="../images/pro_detail_0"+query+".png";
+      switch (query) {
+        case '1':
+          title = "吉利先锋";
+          break;
+        case '2':
+          title = "先驱发动机V5";
+          break;
+        case '3':
+          title = "机械头盔";
+          break;
+        case '4':
+          title = "机械夹克";
+          break;
+        case '5':
+          title = "吉利先锋";
+          break;
+        case '6':
+          title = "先驱发动机V5";
+          break;
+        default:
+          break;
+      }
+      $(".product-msg .title").text(title);
+      $(".product-img>img").attr("src", path);
+    });
+  </script>
+  <script src="../js/common.js" type="text/javascript"></script>
 </body>
-<script src="../js/common.js" type="text/javascript"></script>
+
 </html>

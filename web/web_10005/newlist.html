@@ -16,32 +16,19 @@
 </head>
 
 <body>
-    <div id="top">
-        <img src="images/mob_top.png" alt="pic" style="width:100%;height:100%;">
-        <div class="top_back"></div>
-     </div>
-  <div class="index_news index_news_news">
-      <view class="news_h">新闻咨询</view>
-    <!-- <a class="news_item" href="new/new1.html">
-      <div class="news_left">
-        <div class="left_top">11-10</div>
-        <div class="left_bottom">2018</div>
+  <div id="top">
+    <img src="images/mob_top.png" alt="pic" style="width:100%;height:100%;">
+    <div class="top_back"></div>
+  </div>
+  <div class="news-box news-list-box">
+    <!-- <a href="new/new1.html" class="news-item clearfix">
+      <img  src="images/news_01.png"  alt="" class="img l" />
+      <div class="right-box r">
+        <div class="date">2019-11-09</div>
+        <div class="title">世界最危险的摩托车赛事：至今已有256名车手身亡世界最危险的摩托车赛事：至今已有256名车手身亡</div>
       </div>
-      <div class="news_mid">
-        <img src="images/news_01.png" style="width:100%; height:100%;display: block;" />
-      </div>
-      <div class="news_right">
-        <div class="right_h1">初二是成绩下滑“高危期”</div>
-        <div class="right_h2">
-            由于学生刚进入初二，心理发展不成熟，对自己的认识不足，困难面...
-        </div>
-        <div class="more">
-          <img src="images/more.png" style="width:100%; height:100%;display: block;" />
-        </div>
-      </div>
-      <div style="clear: both"></div>
     </a> -->
-    <div class="no_news">没有更多内容了</div>
+    <div class="no-more-news">没有更多内容了</div>
   </div>
 
 
@@ -57,87 +44,65 @@
           <p class="tabActive">新闻</p>
         </a></div>
       <div><a href="message.html"><img src="images/tab_con.png">
-          <p>留言</p>
+          <p>我们</p>
         </a></div>
     </div>
   </footer>
 </body>
 
 <script>
-var data=[
-  {
-    "day":"11-10",
-    "year":"2018",
-    "title":"初二是成绩下滑“高危期”",
-    "intro":"由于学生刚进入初二，心理发展不成熟，对自己的认识不..."
-  },
-  {
-    "day":"11-10",
-    "year":"2018",
-    "title":"怎么写好一篇作文",
-    "intro":"（一）语言方面要建立“语汇库”。语汇是文章的细胞..."
-  },
-  {
-    "day":"11-10",
-    "year":"2018",
-    "title":"这个学还有必要上吗",
-    "intro":"越是没本事的人，越觉得读书无用！读书有什么用？难道..."
-  },
-  {
-    "day":"11-10",
-    "year":"2018",
-    "title":"如何提高学习效率呢",
-    "intro":"在学习中我们经常会发现这样一个现象，那就是学习时间..."
-  },
-  {
-    "day":"11-10",
-    "year":"2018",
-    "title":"什么是学习动机",
-    "intro":"学习动机是指引发与维持学生的学习行为，并使之指向..."
-  },
-  {
-    "day":"11-10",
-    "year":"2018",
-    "title":"如何教孩子记单词",
-    "intro":"首先：兴趣是背单词最好的记忆小孩的记忆力往往都比较..."
-  },
-  {
-    "day":"11-10",
-    "year":"2018",
-    "title":"家长如何陪伴孩子学习",
-    "intro":"不必全程陪伴，不可以陪她陪到离不开家长的程度。教会..."
+  var data = [{
+      "date": "2019-11-09",
+      "title": "世界最危险的摩托车赛事：至今已有256名车手身亡...",
+    },
+    {
+      "date": "2019-11-09",
+      "title": "世界最危险的摩托车赛事：至今已有256名车手身亡...",
+    },
+    {
+      "date": "2019-11-09",
+      "title": "世界最危险的摩托车赛事：至今已有256名车手身亡...",
+    },
+    {
+      "date": "2019-11-09",
+      "title": "世界最危险的摩托车赛事：至今已有256名车手身亡...",
+    },
+    {
+      "date": "2019-11-09",
+      "title": "世界最危险的摩托车赛事：至今已有256名车手身亡...",
+    },
+    {
+      "date": "2019-11-09",
+      "title": "世界最危险的摩托车赛事：至今已有256名车手身亡...",
+    },
+    {
+      "date": "2019-11-09",
+      "title": "世界最危险的摩托车赛事：至今已有256名车手身亡...",
+    }
+  ]
+
+  function getDom(params) {
+    for (var i = 1; i < params.length; i++) {
+      var j = i - 1;
+      var dom =
+        "<a class='news-item clearfix' href='new/new1.html?id="+i+"'>" +
+        "<img  src='images/news_"+filter(i)+".png'  alt='' class='img l' />" +
+        "<div class='right-box r'>" +
+        "<div class='date'>" + params[j].date + "</div>" +
+        "<div class='title'>" + params[j].title + "</div>" +
+        "</div>" +
+        "</a>"
+      $('.news-list-box').append(dom)
+    }
+  };
+
+  function filter(params) {
+    var order = ""
+    params % 2 === 0 ? order = '02' : order = '01';
+    return order
   }
-]
 
-function getDom(params){
-  for(var i=params.length;i>0;i--){
-    var j=i-1;
-    var dom= 
-              "<a class='news_item' href='new/new"+i+".html'>"+
-                  "<div class='news_left'>"+
-                    "<div class='left_top'>"+params[j].day+"</div>"+
-                    "<div class='left_bottom'>"+params[j].year+"</div>"+
-                  "</div>"+
-                  "<div class='news_mid'>"+
-                    "<img src='images/news_0"+i+".png' style='width:100%; height:100%;display: block;' />"+
-                  "</div>"+
-                  "<div class='news_right'>"+
-                    "<div class='right_h1'>"+params[j].title+"</div>"+
-                    "<div class='right_h2'>"+
-                        params[j].intro+
-                    "</div>"+
-                    "<div class='more'>"+
-                      "<img src='images/more.png' style='width:100%; height:100%;display: block;' />"+
-                    "</div>"+
-                  "</div>"+
-                  "<div style='clear: both'></div>"+
-                "</a>";
-    $('.news_h').after(dom)
-  }
-}
-
-getDom(data)
-
-
+  getDom(data)
 </script>
+
 </html>

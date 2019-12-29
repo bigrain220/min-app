@@ -2,36 +2,72 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,user-scalable=no,maximum-scale=1,initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>南方网通网络技术开发有限公司</title>
-  <link href="../css/firefox.css" rel="stylesheet" type="text/css" />
-  <link href="../css/style.css" rel="stylesheet" type="text/css" />
-  <script src="../js/jquery.js" type="text/javascript"></script>
-  <script src="../js/banner.js" type="text/javascript"></script>
-  <script src="../js/jquery.banner.revolution.min.js" type="text/javascript"></script>
-  <!-- <script src="../js/common.js" type="text/javascript"></script> -->
+   <meta charset="UTF-8">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="viewport"
+      content="width=device-width,minimum-scale=1,user-scalable=no,maximum-scale=1,initial-scale=1" />
+   <meta name="apple-mobile-web-app-capable" content="yes" />
+   <title>南方网通网络技术开发有限公司</title>
+   <link href="../css/firefox.css" rel="stylesheet" type="text/css" />
+   <link href="../css/style.css" rel="stylesheet" type="text/css" />
+   <script src="../js/jquery.js" type="text/javascript"></script>
+   <!-- <script src="../js/banner.js" type="text/javascript"></script>
+  <script src="../js/jquery.banner.revolution.min.js" type="text/javascript"></script> -->
+   <!-- <script src="../js/common.js" type="text/javascript"></script> -->
 </head>
 
 <body>
-    <div id="top">
-        <img src="../images/mob_top.png" alt="pic" style="width:100%;height:100%;" class="main">
-        <div class="top_back turn"></div>
-     </div>
-  <div class="newsdetail">
-    <div class="newsdetail_t">
-      <h3>初二是成绩下滑“高危期”</h3>
-      <p>发布时间：2018-11-10 20:36:45</p>
-    </div>
-    <div class="newsdetail_b">
-      <p>
-          由于学生刚进入初二，心理发展不成熟，对自己的认识不足，困难面前，找不出或不想找解决问题的方法，采取自我安慰，自我放弃。又由于学习的长期性，需要学生坚持不懈地学习，但部分学生缺乏起码的意志和毅力，怕吃点苦，怕受点累，就产生应付的心态，造成学习不扎实，分化下来就是必然的了。
-      </p>
-    </div>
-  </div>
-  <script src="../js/common.js" type="text/javascript"></script>
+   <div id="top">
+      <img src="../images/mob_top.png" alt="pic" style="width:100%;height:100%;" class="main">
+      <div class="top_back turn"></div>
+   </div>
+
+   <div class="news-detail-box">
+      <div class="news-head">
+         <span class="new_title">世界最危险的摩托车赛事：至今已有256名车手身亡，Dan Kneen在列</span>
+         <div class="news-time"> 时间：2019-11-25</div>
+      </div>
+      <div class="news-content">
+
+      </div>
+      <img class="news_img" src="" alt="" style="width: 100%;height: 3.6rem;margin: 0.24rem auto;">
+   </div>
+   <script>
+      $(document).ready(function () {
+         var query = location.search.split('=')[1] + "";
+         var title = "世界最危险的摩托车赛事：至今已有256名车手身亡，Dan Kneen在列";
+         var content =
+            "许多人都知道摩托车比赛都具有一定的危险性，因此在车手比赛摩托车的时候，身上都会有专业的赛车服，这些赛车服的功能之一就是安全气囊,而且在比赛的赛道上，也有很多地区设立了缓冲区来降低事故赛车的速度，减小赛车因为高速撞击导致的人员伤亡。";
+         var path = "";
+         switch (query) {
+            case '1':
+               path = "../images/news_01.png"
+               break;
+            case '2':
+               path = "../images/news_02.png"
+               break;
+            case '3':
+               path = "../images/news_01.png"
+               break;
+            case '4':
+               path = "../images/news_02.png"
+               break;
+            case '5':
+               path = "../images/news_01.png"
+               break;
+            case '6':
+               path = "../images/news_02.png"
+               break;
+            default:
+               break;
+         }
+         $(".news-detail-box .new_title").text(title);
+         $(".news-detail-box .news-content").text(content);
+         $(".news-detail-box .news_img").attr("src", path)
+      });
+   </script>
+
+   <script src="../js/common.js" type="text/javascript"></script>
 </body>
 
 </html>

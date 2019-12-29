@@ -2,7 +2,7 @@
 /* common */
 .contact-box,.message-box{margin-top: 44rpx;padding: 0 24rpx;-webkit-box-sizing: border-box;box-sizing: border-box;}
 .title-box .title-cn{font-size:32rpx; color: rgb( 68, 68, 68 );text-align: center;height: 32rpx;line-height: 32rpx;overflow: hidden;}
-.title-box .title-en{font-size: 22rpx;color: rgb( 51, 51, 51 );text-align: center;height: 22rpx;line-height: 22rpx;margin: 16rpx 0 46rpx 0;overflow: hidden;}
+.title-box .title-en{font-size: 22rpx;color: rgb( 51, 51, 51 );text-align: center;height: 30rpx;line-height: 30rpx;margin: 16rpx 0 46rpx 0;overflow: hidden;}
 
 .contact-box .contact{padding-bottom: 24rpx;}
 .contact-box .contact .contact_con{ font-size: 26rpx; color: rgb( 102, 102, 102 );line-height: 48rpx;}
