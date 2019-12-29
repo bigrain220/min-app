@@ -81,7 +81,7 @@
     </view>
   </view>
 
-  <view class="index_intro">
+  <!-- <view class="index_intro">
     <view class="title-box">
       <view class="title-cn">公司简介</view>
       <view class="title-en">About us</view>
@@ -93,7 +93,7 @@
       </view>
       <view class="intro_btn"><text bindtap="goIntroDetail">了解详情</text></view>
     </view>
-  </view>
+  </view> -->
 
 
 
