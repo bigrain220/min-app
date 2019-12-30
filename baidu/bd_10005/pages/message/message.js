@@ -6,7 +6,6 @@ Page({
     showLoading: true,
     rreset: "",
     message_img: '',
-    contact_node: ""
   },
   // calling: function () {
   //   wx.makePhoneCall({
@@ -30,7 +29,6 @@ Page({
       var aboutt = res.rows[0].content;
       WxParse.wxParse('article', 'html', aboutt, that, 5);
       this.setData({
-        contact_node: res.aboutt,
         showLoading: false
       });
     });
