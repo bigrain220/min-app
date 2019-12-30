@@ -226,20 +226,19 @@ max-height: 1.00rem;}
 	footer{width: 275px;}
 	/* 顶部 */
 	#top{display: block;}
-	#top img{padding-right: 0.8rem;}
-	#top .main{padding-right: 0.8rem;}
+	#top img{padding-right: 0.3rem;}
 	/* 首页 */
 	.index_box .products-item{width: 3.2rem!important;}
 	.index_box,.message-page,.product-info,.product-msg,.about-info,.about_top,.news-detail-box,.contact-info,#top img{-webkit-box-sizing: border-box;box-sizing: border-box;}	
-	.index_box{padding-right: 0.6rem!important;}
-	.index-video .video-box{width: 96%;}
+	.index_box{padding-right: 0.3rem!important;}
+	.index-video .video-box{width: 98%;}
 	/* 新闻列表 */
-	.news-list-box{padding-right: 0.8rem;}
+	.news-list-box{padding-right: 0.3rem;}
 	/* 产品列表 */
-	.container.pro_container{padding-right: 0.5rem;}
+	.container.pro_container{padding-right: 0.1rem;}
 	/* 产品详情 */
-	.message-page{padding-right:0.8rem;}
-	.product-info,.product-msg,.news-detail-box{padding-right: 1rem;}
+	.message-page{padding-right:0.4rem;}
+	.product-info,.product-msg,.news-detail-box{padding-right: 0.6rem;}
 	.about-info,.about_top{padding-right: 0.4rem;}
 	.contact-info{padding-right: 0.8rem;}
 
