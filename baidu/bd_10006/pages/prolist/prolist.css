@@ -1,0 +1,12 @@
+.prolist_index,.pro_con{box-sizing: border-box;padding: 0 24rpx;}
+.prolist_index{width: 100%; margin:0 auto; height: 88rpx;white-space: nowrap; overflow: hidden; position:fixed; top: 0; left: 0; background: #f5f5f5; z-index: 9999;}
+.prolist_index .item{font-size: 28rpx; line-height: 88rpx;color: rgb( 102, 102, 102 ); text-align: center; display: inline-block;margin-right: 50rpx;}
+.prolist_index .active{color: rgb( 198, 160, 69 );}
+.svv{ height: 1110rpx; }
+.pro_con{ width: 100%; margin:0 auto; overflow: hidden; background: #fff; margin-top: 88rpx;}
+.pro_box{display: flex;flex-wrap: wrap;justify-content: space-around;}
+.pro_item{ width: 48%;margin-top: 24rpx; overflow: hidden; text-align: center;}
+.pro_img{ width: 100%; height:200rpx; overflow: hidden;border-radius: 10rpx;}
+.pro_item text{ font-size: 28rpx; color: rgb( 102, 102, 102 ); line-height: 60rpx; height: 60rpx; overflow: hidden;}
+.page-loading{color:#999;}
+

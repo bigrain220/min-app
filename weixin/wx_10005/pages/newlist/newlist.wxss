@@ -1,0 +1,18 @@
+
+
+.news-list-box{margin: 0 24rpx;margin-bottom: 40rpx;}
+.news-list-box .news_item{width: 100%;height:230rpx;border-top: 1rpx solid #eee;box-sizing: border-box;overflow: hidden;position: relative;padding:24rpx 0;}
+.news-list-box .news_item:nth-last-child(1){border-bottom: 1rpx solid #eee;}
+.news-list-box .news_left{width:38%;height: 100%;float: left;}
+.news-list-box .news_left .left_top{font-size:24rpx;color: #999;width: 100%;text-align: center;padding-top:60rpx;}
+.news-list-box .news_left .left_bottom{font-size:30rpx;color: #333;width: 100%;text-align: center;}
+.news-list-box .news_right{padding: 0 24rpx;box-sizing: border-box;}
+.news-list-box .news_right .right_h1{font-size: 24rpx;height: 30rpx;line-height: 30rpx; color: rgb( 102, 102, 102 );overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.news-list-box .news_right .right_h2{font-size: 28rpx; color: rgb( 68, 68, 68 );line-height: 34rpx;margin-top: 24rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;max-height: 68rpx;}
+.news-list-box .news_right .right_h2 view{overflow: hidden;}

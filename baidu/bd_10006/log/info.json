@@ -1,0 +1,200 @@
+[
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/app.js",
+        "row": 8,
+        "column": 15,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/app.js",
+        "row": 10,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/app.js",
+        "row": 19,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/app.js",
+        "row": 23,
+        "column": 10,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/index/index.js",
+        "row": 20,
+        "column": 13,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/index/index.js",
+        "row": 39,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/index/index.js",
+        "row": 128,
+        "column": 6,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/index/index.js",
+        "row": 169,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/index/index.js",
+        "row": 182,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/index/index.js",
+        "row": 188,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/logs/logs.js",
+        "row": 10,
+        "column": 13,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/message/message.js",
+        "row": 68,
+        "column": 6,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/message/message.js",
+        "row": 76,
+        "column": 8,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/message/message.js",
+        "row": 84,
+        "column": 10,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/message/message.js",
+        "row": 92,
+        "column": 12,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/message/message.js",
+        "row": 107,
+        "column": 16,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/newlist/newlist.js",
+        "row": 33,
+        "column": 2,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/newlist/newlist.js",
+        "row": 70,
+        "column": 3,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/pages/prolist/prolist.js",
+        "row": 27,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/utils/api.js",
+        "row": 109,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/wxParse/wxParse.js",
+        "row": 22,
+        "column": 0,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/666/wxParse/wxParse.js",
+        "row": 60,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    }
+]

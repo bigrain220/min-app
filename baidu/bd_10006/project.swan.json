@@ -1,0 +1,17 @@
+{
+    "appid": "14712354",
+    "host": "baiduboxapp",
+    "preview": {
+        "packageId": 548716
+    },
+    "projectname": "bd_10006",
+    "setting": {
+        "urlCheck": true
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.140.11",
+            "extensionJsVersion": "1.9.2"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<wxs src="../../utils/imgFilter.wxs" module="tools" />
+<block wx:if="{{showLoading}}">
+  <view class="page-loading">
+    <image class="img-loading" src="../images/1.gif" />
+    <text>正在加载中...</text>
+  </view>
+</block>
+<block wx:else>
+<view class="product-img">
+  <image style="width:100%; height: 100%;" mode="scaleToFill" src="{{tools.bar(products_image,750)}}"></image>
+</view>
+<view class="product-msg">
+ <view class="title">{{quanlcg}}</view>
+</view>
+
+<view class="product-space"></view>
+
+<view class="product-info">
+  <view class="title"></view>
+  <view class="product-infoo">
+   <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+</view>
+</block>

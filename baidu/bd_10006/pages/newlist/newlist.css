@@ -1,0 +1,15 @@
+
+.news-list-box{margin: 0 24rpx;margin-bottom: 40rpx;}
+.news-list-box .news-item{height: 227rpx;width: 100%;border-bottom: 1rpx solid #eee;box-sizing: border-box;padding: 24rpx 0;overflow: hidden;border-bottom: 1rpx solid #ccc;}
+.news-list-box .news-item .title{font-size: 28rpx; color: rgb( 68, 68, 68 );overflow: hidden;text-overflow:ellipsis;white-space: nowrap;padding-right: 60rpx;letter-spacing: 2rpx;}
+.news-list-box .news-item .content{font-size: 26rpx;line-height:34rpx;color: rgb( 136, 136, 136 );margin-top: 20rpx;height:68rpx;
+  letter-spacing: 2rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.news-list-box .news-item .content view{overflow: hidden;}
+.news-list-box .news-item .date{font-size: 20rpx;  color: rgb( 136, 136, 136 );margin-top: 20rpx;}

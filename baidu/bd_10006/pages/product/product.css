@@ -1,0 +1,17 @@
+
+.product-msg,.product-info{box-sizing: border-box;padding: 0 24rpx;width: 100%;}
+
+.product-img{ height: 460rpx; display: flex; justify-content: center; align-items: center; overflow: hidden;}
+
+
+.product-msg .title{height: 80rpx;border-top: 1rpx solid #eee;line-height: 80rpx;font-size: 32rpx;color: rgb( 68, 68, 68 );text-align: center;}
+
+.product-space{width: 100%;height: 24rpx;background:#eee;}
+
+.product-info{overflow: hidden; margin:0 auto;padding-bottom:40rpx;}
+.product-info .title{font-size: 32rpx;color: rgb( 68, 68, 68 );height: 50rpx;line-height: 50rpx;}
+.product-info .product-infoo{color: rgb( 102, 102, 102 );}
+.product-infoo image,.product-infoo text,.product-infoo view{max-width: 100%;display: block;}
+
+
+

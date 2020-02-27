@@ -1,0 +1,200 @@
+[
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/app.js",
+        "row": 8,
+        "column": 15,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/app.js",
+        "row": 10,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/app.js",
+        "row": 19,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/app.js",
+        "row": 23,
+        "column": 10,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/index/index.js",
+        "row": 20,
+        "column": 13,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/index/index.js",
+        "row": 39,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/index/index.js",
+        "row": 129,
+        "column": 6,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/index/index.js",
+        "row": 170,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/index/index.js",
+        "row": 183,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/index/index.js",
+        "row": 189,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/logs/logs.js",
+        "row": 10,
+        "column": 13,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/message/message.js",
+        "row": 70,
+        "column": 6,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/message/message.js",
+        "row": 78,
+        "column": 8,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/message/message.js",
+        "row": 86,
+        "column": 10,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/message/message.js",
+        "row": 94,
+        "column": 12,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/message/message.js",
+        "row": 109,
+        "column": 16,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/newlist/newlist.js",
+        "row": 33,
+        "column": 2,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/newlist/newlist.js",
+        "row": 70,
+        "column": 3,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/pages/prolist/prolist.js",
+        "row": 27,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/utils/api.js",
+        "row": 109,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/wxParse/wxParse.js",
+        "row": 22,
+        "column": 0,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform function call arg name",
+        "file": "C:/Users/Administrator/Desktop/一站通小程序/code/baidu/bd_10005/wxParse/wxParse.js",
+        "row": 60,
+        "column": 4,
+        "before": "wx",
+        "after": "swan",
+        "message": "只转换了上下文, wx ==> swan"
+    }
+]

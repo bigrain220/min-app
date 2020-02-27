@@ -1,0 +1,51 @@
+<wxs src="../../utils/imgFilter.wxs" module="tools" />
+<block wx:if="{{showLoading}}">
+  <view class="page-loading">
+    <image class="img-loading" src="../images/1.gif" />
+    <text>正在加载中...</text>
+  </view>
+</block>
+<block wx:else>
+  <scroll-view scroll-x="true" class="prolist_index">
+    <view class="item {{curIndex==99 ? 'active' : ''}}" bindtap="switchRightTab1" data-index="{{99}}">全部</view>
+    <block wx:for="{{pro_title}}" wx:for-item="proitem" wx:key="{{index}}">
+      <view class="item {{curIndex==index ? 'active' : ''}}" bindtap="switchRightTab1" data-index="{{index}}"
+        data-cid="{{proitem.id}}">{{proitem.name}}</view>
+    </block>
+  </scroll-view>
+
+  <view class="pro_con">
+    <scroll-view class="svv" scroll-top="100" lower-threshold="50rpx" scroll-y="{{true}}"
+      bindscrolltolower="scrolltolower">
+      <!-- <view item="{{curIndex}}"> -->
+      <view wx:if="{{list_data.length !=0}}" class="pro_box">
+        <view wx:for="{{list_data}}" class="pro_item" wx:for-item="prolistitem" wx:key="{{index}}" data-id="{{prolistitem.id}}"
+          data-title="{{prolistitem.name}}" data-img="{{prolistitem.image}}" bindtap="goProDetail">
+          <view class="pro_img">
+            <image style=" width:100%; height: 100%;" src="{{tools.bar(prolistitem.image,375)}}"></image>
+          </view>
+          <text>{{prolistitem.name}}</text>
+        </view>
+        <view class="blank-item" style="height: 0px;visibility: hidden;width: 48%;"></view>
+        <view class="blank-item" style="height: 0px;visibility: hidden;width: 48%;"></view>
+      </view>
+      <view wx:if="{{list_data.length ==0}}">
+        <view style='font-size:24rpx;color:#999;margin-top: 24rpx;'>暂无数据</view>
+      </view>
+      <!-- </view> -->
+      <block wx:if="{{showMore}}">
+        <view class="page-loading">
+          <image class="img-loading" src="../images/1.gif" />
+          <text>正在加载中...</text>
+        </view>
+      </block>
+      <block wx:if="{{isData && list_data.length >0}}">
+        <view class="page-loading">
+          <text>没有更多内容了</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+
+</block>

@@ -1,0 +1,7 @@
+.news-detail-box{ width: 100%; margin:0 auto; overflow: hidden;box-sizing: border-box;padding:0 24rpx;padding-bottom: 80rpx;}
+.news-detail-box .news-head{ text-align: center;overflow: hidden;}
+.news-detail-box .news-head .new_title{ font-size: 32rpx; line-height: 60rpx;color: rgb( 68, 68, 68 );margin: 40rpx 0 14rpx 0;display: block;}
+.news-detail-box .news-head .news-time{ font-size: 24rpx; color: rgb( 102, 102, 102 );}
+.news-detail-box .news-content{ margin-top: 30rpx; text-indent: 40rpx; font-size: 28rpx;letter-spacing: 1rpx; color: rgb( 102, 102, 102 );}
+.news-detail-box .news-content view,.news-content image,.news-content text{max-width: 100%;display: block;}
+.news-detail-box .news-content image{margin:6rpx 0}

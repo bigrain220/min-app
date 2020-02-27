@@ -1,0 +1,42 @@
+<import src="../../wxParse/wxParse.swan" />
+<block s-if="showLoading">
+  <view class="page-loading">
+    <image class="img-loading" src="../images/1.gif" />
+    <text>正在加载中...</text>
+  </view>
+</block>
+<block s-else>
+  <view class="news-list-box">
+    <block s-if="moment.length>0">
+      <view class="news-item clearfix" s-for="item, index in moment" s-key="index" data-id="{{item.id}}" data-title="{{item.name}}" bindtap="neww">
+        <view>
+          <view class="title">{{item.name}}</view>
+          <view class="content">
+            <template is="wxParse" data="{{{wxParseData:htmlAry[index].nodes}}}" />
+          </view>
+          <view class="date">{{newsYear[index]}}-{{newsDay[index]}}</view>
+        </view>
+      </view>
+    </block>
+    <block s-else>
+      <view class="no-data">暂无数据</view>
+    </block>
+  </view>
+
+  <block s-if="bottomLoading">
+    <view class="page-loading" style="padding:0.6rem 0;">
+      <image class="img-loading" src="../images/1.gif" />
+      <text>正在加载中...</text>
+    </view>
+  </block>
+  <block s-if="showMore" style="padding:0.6rem 0;">
+    <view class="page-loading">
+      <text>上拉加载更多</text>
+    </view>
+  </block>
+  <block s-if="isData && moment.length>0">
+    <view class="page-loading" style="padding:0.6rem 0;">
+      <text style='color:#666'>没有更多内容了</text>
+    </view>
+  </block>
+</block>

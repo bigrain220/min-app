@@ -1,0 +1,97 @@
+<import src="../../wxParse/wxParse.swan" />
+<filter src="../../utils/imgFilter.js" module="tools"></filter>
+<block s-if="showLoading">
+  <view class="page-loading">
+    <image class="img-loading" src="../images/1.gif" />
+    <text>正在加载中...</text>
+  </view>
+</block>
+<block s-else>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#eae88f" style="width: 100%; height: 320rpx; margin:0 auto; overflow: hidden;">
+    <block s-for="item, index in imgUrls" s-key="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{tools.bar(item.image,750)}}" class="slide-image" mode="widthFix" style="width:100%; height:100%;" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="index-products">
+    <view class="title-box">
+      <view class="title-cn">热销产品</view>
+      <view class="title-en">Hot Products</view>
+    </view>
+    <block s-if="proList.length>0">
+      <view class="products-box clearfix">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#e2c47c" indicator-color="#f6edd7" style="width: 100%; height: 360rpx; margin:0 auto; overflow: hidden;">
+          <block s-for="item, index in proList" s-key="index">
+            <swiper-item>
+              <image src="{{tools.bar(item.image,375)}}" class="slide-image" mode="widthFix" style="width:100%; height:100%;" bindtap="goProDetail" data-id="{{item.id}}" data-title="{{item.name}}" data-img="{{item.image}}" />
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </block>
+    <block s-else>
+      <view class="no-data">暂无数据</view>
+    </block>
+  </view>
+
+  <view class="index_intro">
+    <view class="title-box">
+      <view class="title-cn">关于我们</view>
+      <view class="title-en">About Us</view>
+    </view>
+    <view class="intro_content">
+      <image src="{{tools.bar(introData.image,750)}}" class="intro_img" style="width:100%; height:360rpx;display: block;border-radius: 10rpx;"></image>
+      <view class="intro_text">
+        <template is="wxParse" data="{{{wxParseData:article.nodes}}}" />
+      </view>
+      <view class="intro_btn"><text bindtap="goIntroDetail">详情</text></view>
+    </view>
+  </view>
+
+  <view class="index-video" s-if="videoData.url">
+    <view class="video-box">
+      <video class="video" src="{{videoData.url}}" poster="{{videoData.image}}" controls show-center-play-btn enable-play-gesture></video>
+    </view>
+  </view>
+
+  <view class="index-news">
+    <view class="title-box">
+      <view class="title-cn">资讯中心</view>
+      <view class="title-en">News Center</view>
+    </view>
+    <view class="news-box">
+      <!-- <view class="news-item clearfix">
+        <view>
+          <view class="title">世界最危险的摩托车赛事：至今已有256名车手身亡世界最危险的摩托车赛事：至今已有256名车手身亡</view>
+          <view class="content">
+            伴随9月22日2019第八届中国·新沂环骆马湖自行车公路公开赛女子公开组的順悧完赛，新一届“环骆马湖”赛事圆满落幕。伴随9月22日2019第八届中国·新沂环骆马湖自行车公路公开赛女子公开组的順悧完赛，新一届“环骆马湖”赛事圆满落幕。
+          </view>
+          <view class="date">2019-11-09</view>
+        </view>
+      </view> -->
+      <block s-if="newsList.length>0">
+        <view class="news-item clearfix" s-for="item, index in newsList" s-key="index" data-id="{{item.id}}" data-title="{{item.name}}" bindtap="goDetail">
+          <view>
+            <view class="title">{{item.name}}</view>
+            <view class="content">
+              <template is="wxParse" data="{{{wxParseData:htmlAry[index].nodes}}}" />
+            </view>
+            <view class="date">{{newsYear[index]}}-{{newsDay[index]}}</view>
+          </view>
+        </view>
+      </block>
+      <block s-else>
+        <view class="no-data">暂无数据</view>
+      </block>
+    </view>
+  </view>
+
+
+
+
+
+
+
+</block>

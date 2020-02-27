@@ -1,0 +1,51 @@
+/**app.css**/
+@import "/wxParse/wxParse.css";
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+
+} 
+.page-loading{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:12px;
+	padding-top:20px;
+}
+
+.page-loading .img-loading{
+	width:30rpx;
+	height:30rpx;
+}
+.page-loading .img-loading{
+	width:30rpx;
+	height:30rpx;
+}
+.indexbanner{ width: 98%; height: 345rpx; margin:0 auto; overflow: hidden; }
+.no-data{
+	font-size: 28rpx;color: #999;
+}
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}
+.clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+	content: "";
+	display: block;
+	height: 0;
+	clear:both;
+	visibility: hidden;
+}
+swan-button:after{
+	border:0
+}
+
+

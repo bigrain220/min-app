@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="viewport"
+      content="width=device-width,minimum-scale=1,user-scalable=no,maximum-scale=1,initial-scale=1" />
+   <meta name="apple-mobile-web-app-capable" content="yes" />
+   <title>南方网通网络技术开发有限公司</title>
+   <link href="../css/firefox.css" rel="stylesheet" type="text/css" />
+   <link href="../css/style.css" rel="stylesheet" type="text/css" />
+   <script src="../js/jquery.js" type="text/javascript"></script>
+   <!-- <script src="../js/banner.js" type="text/javascript"></script>
+  <script src="../js/jquery.banner.revolution.min.js" type="text/javascript"></script> -->
+   <!-- <script src="../js/common.js" type="text/javascript"></script> -->
+</head>
+
+<body>
+   <div id="top">
+      <img src="../images/mob_top.png" alt="pic" style="width:100%;height:100%;" class="main">
+      <div class="top_back turn"></div>
+   </div>
+
+   <div class="news-detail-box">
+      <div class="news-head">
+         <span class="new_title">世界最危险的摩托车赛事：至今已有256名车手身亡，Dan Kneen在列</span>
+         <div class="news-time"> 时间：2019-11-09</div>
+      </div>
+      <div class="news-content">
+         许多人都知道摩托车比赛都具有一定的危险性，因此在车手比赛摩托车的时候，身上都会有专业的赛车服，这些赛车服的功能之一就是安全气囊,而且在比赛的赛道上，也有很多地区设立了缓冲区来降低事故赛车的速度，减小赛车因为高速撞击导致的人员伤亡。
+      </div>
+      <img class="news_img" src="" alt="" style="width: 100%;height: 3.6rem;margin: 0.24rem auto;">
+      <div class="news-content">
+         这个赛事就是曼岛TT排位赛，这是一个在每年6月份，在地球另一端英国的一个附属小岛举行的一场被誉为全球最危险的摩托车赛事：曼岛TT。但是今天，在开赛之前就传来了一个令人悲伤的噩耗，隶属Tyco BMW车队的年轻车手Dan Kneen在排位赛中，骑乘一辆宝马S1000RR途径教堂区域的时候，发生意外身亡！
+      </div>
+   </div>
+   <script>
+      $(document).ready(function () {
+         var query = location.search.split('=')[1] + "";
+         var title = "世界最危险的摩托车赛事：至今已有256名车手身亡，Dan Kneen在列";
+         var path = "";
+         switch (query) {
+            case '1':
+               path = "../images/news_01.png"
+               break;
+            case '2':
+               path = "../images/news_02.png"
+               break;
+            case '3':
+               path = "../images/news_01.png"
+               break;
+            case '4':
+               path = "../images/news_02.png"
+               break;
+            case '5':
+               path = "../images/news_01.png"
+               break;
+            case '6':
+               path = "../images/news_02.png"
+               break;
+            default:
+               break;
+         }
+         $(".news-detail-box .new_title").text(title);
+         $(".news-detail-box .news_img").attr("src", path)
+      });
+   </script>
+
+   <script src="../js/common.js" type="text/javascript"></script>
+</body>
+
+</html>

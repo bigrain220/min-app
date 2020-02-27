@@ -1,0 +1,65 @@
+/**index.wxss**/
+.userinfo {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+/* common */
+.index-products,.index-video,.index-news,.index_intro{margin-top: 60rpx;padding: 0 24rpx;box-sizing: border-box;overflow: hidden;}
+.title-box{display: -webkit-box;display: flex;-webkit-box-pack: center;justify-content: center;}
+.title-box .title-cn{margin-right: 10rpx;}
+.title-box .title-cn,.title-box .title-en{font-size:32rpx; color: rgb( 68, 68, 68 );height: 36rpx;line-height: 32rpx;overflow: hidden;}
+/* index-products */
+.index-products .products-box{margin-top: 42rpx;}
+/* index_intro */
+.index_intro .intro_content{width: 100%;margin-top: 32rpx;}
+.index_intro .intro_content .intro_text{ font-size:26rpx;color:rgb( 102, 102, 102 );line-height: 34rpx;
+margin-top:40rpx;letter-spacing: 2rpx;
+text-overflow: -o-ellipsis-lastline;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;max-height: 100rpx;}
+.index_intro .intro_content .intro_text view{max-height: 100rpx;overflow: hidden;}
+.index_intro .intro_content .intro_btn{width: 100%;text-align: center;margin-top: 46rpx;height: 66rpx;line-height: 66rpx;}
+.index_intro .intro_btn  text{font-size: 28rpx; color: #fff; background-color: rgb( 226, 196, 124 );padding:0 90rpx;display: inline-block;border-radius:40rpx;}
+/* index-video */
+.index-video .video-box{width: 100%;height: 320rpx;overflow: hidden;border-radius: 10rpx;}
+.index-video .video-box .video{width: 100%;height: 100%;border-radius: 10rpx;}
+/* index-news */
+.index-news .news-box{margin-bottom: 24rpx;}
+.index-news .title-box{margin-bottom: 16rpx;}
+.index-news .news-item{height: 227rpx;width: 100%;box-sizing: border-box;padding: 24rpx 0;overflow: hidden;border-bottom: 1rpx solid #ccc;}
+.index-news .news-item .title{font-size: 28rpx; color: rgb( 68, 68, 68 );overflow: hidden;text-overflow:ellipsis;white-space: nowrap;padding-right: 60rpx;letter-spacing: 2rpx;}
+.index-news .news-item .content{font-size: 26rpx;line-height:34rpx;color: rgb( 136, 136, 136 );margin-top: 20rpx;height:68rpx;
+  letter-spacing: 2rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.index-news .news-item .content view{overflow: hidden;}
+.index-news .news-item .date{font-size: 20rpx;  color: rgb( 136, 136, 136 );margin-top: 20rpx;}

@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/prolist/prolist",
+    "pages/message/message",
+    "pages/newlist/newlist",
+    "pages/product/product",
+    "pages/newdetail/newdetail",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "selectedColor": "#e78c22",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/tab_home.png",
+        "selectedIconPath": "pages/images/tab_home1.png"
+      },
+      {
+        "pagePath": "pages/prolist/prolist",
+        "text": "产品",
+        "iconPath": "pages/images/tab_pro.png",
+        "selectedIconPath": "pages/images/tab_pro1.png"
+      },
+      {
+        "pagePath": "pages/newlist/newlist",
+        "text": "新闻",
+        "iconPath": "pages/images/tab_news.png",
+        "selectedIconPath": "pages/images/tab_news1.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "我们",
+        "iconPath": "pages/images/tab_our.png",
+        "selectedIconPath": "pages/images/tab_our1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

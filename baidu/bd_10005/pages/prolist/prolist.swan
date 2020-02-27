@@ -1,0 +1,44 @@
+<import src="../../wxParse/wxParse.swan" />
+<filter src="../../utils/imgFilter.js" module="swan"></filter>
+<block s-if="showLoading">
+  <view class="page-loading">
+    <image class="img-loading" src="../images/1.gif" />
+    <text>正在加载中...</text>
+  </view>
+</block>
+<block s-else>
+<view class="prolist-box clearfix">
+  <view class="prolist_l">
+   <view class="item {{curIndex==99 ? 'active' : ''}}" bindtap="switchRightTab1" data-index="{{99}}">全部</view>
+   <block s-for="prott, index in pro_title" s-key="{{idnex}}">  
+    <view class="item {{curIndex==index ? 'active' : ''}}" bindtap="switchRightTab1" data-index="{{index}}" data-cid="{{prott.id}}">{{prott.name}}</view>
+  </block>
+</view>
+
+<view class="prolist_r">
+ <scroll-view class="svv" scroll-y="{{true}}" bindscrolltolower="scrolltolower"> 
+ <!-- <view item="{{curIndex}}">  -->
+  <view s-if="list_data.length !=0">
+    <view s-for="prr, index in list_data" class="pro_item" data-id="{{prr.id}}" data-title="{{prr.name}}" data-img="{{prr.image}}" bindtap="prooo" s-key="{{idnex}}">
+      <view class="pro-item-img"><image style=" width:100%; height: 100%;" mode="aspectFill" src="{{swan.bar(prr.image,250)}}"></image></view>
+      <text>{{prr.name}}</text>
+    </view>
+  </view>
+<!-- </view> -->
+ <block s-if="showMore">
+    <view class="page-loading">
+      <image class="img-loading" src="../images/1.gif" />
+      <text>正在加载中...</text>
+    </view>
+  </block>
+  <block s-if="isData">
+    <view class="page-loading">
+      <text>没有更多内容了</text>
+    </view>
+  </block> 
+</scroll-view>
+</view>  
+
+
+</view>
+</block>
